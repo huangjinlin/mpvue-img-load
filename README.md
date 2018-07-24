@@ -51,5 +51,6 @@ npm install mpvue-img-loader
 (1) load 方法进行图片加载，第一个参数为图片链接，第二个参数可选，为该张图片加载完成时的回调方法
 (2)图片加载完成的回调方法的第一个参数为错误信息（加载成功则为 null），第二个参数为图片信息（Object 类型，包括 src、width 及 height）。
 (3)demo运行效果如下图所示：
+
 ![单张图片预加载](http://storage.360buyimg.com/mtd/home/single-img-load1483686270312.gif)
 ![多张图片预加载](http://storage.360buyimg.com/mtd/home/multi-img-load1483686388552.gif)

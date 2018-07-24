@@ -4,7 +4,6 @@
   "description": "a image pre-loader for mpvue",
   "main": "index.js",
   "author": "huangjinlin",
-  "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",

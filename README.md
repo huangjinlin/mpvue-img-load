@@ -19,7 +19,7 @@ npm install mpvue-img-loader
 ```
 
 ``` javascript
-  import imgLoader from 'imgLoader'
+  import imgLoader from 'mpvue-img-loader'
 
   export default {
     data () {

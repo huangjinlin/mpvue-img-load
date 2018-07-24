@@ -1,6 +1,6 @@
 # mpvue-img-loader
 
-基于 [mpvue](https://github.com/Meituan-Dianping/mpvue) 框架的重写[wxapp-img-loader](https://github.com/o2team/wxapp-img-loader),更好的满足工程化,模块化,自动化的需求
+小程序图片预加载组件,基于 [mpvue](https://github.com/Meituan-Dianping/mpvue) 框架的重写[wxapp-img-loader](https://github.com/o2team/wxapp-img-loader),更好的满足工程化,模块化,自动化的需求
 
 ## 使用方式
 1.安装依赖

@@ -1,8 +1,8 @@
 {
-  "name": "mpvue-img-loader",
-  "version": "1.0.1",
-  "description": "a image pre-loader for mpvue",
-  "main": "src/components/imgLoader.vue",
+  "name": "mpvue-img-load",
+  "version": "1.0.0",
+  "description": "a image pre-load component for mpvue",
+  "main": "src/components/imgLoad.vue",
   "author": "huangjinlin <416921332@qq.com>",
   "scripts": {
     "dev": "node build/dev-server.js",
@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/huangjinlin/mpvue-img-loader.git"
+    "url": "https://github.com/huangjinlin/mpvue-img-load.git"
   },
   "keywords": [
     "mpvue",
-    "img-loader",
-    "pre-loader"
+    "img-load",
+    "pre-load"
   ],
   "license": "ISC",
   "dependencies": {

@@ -7,12 +7,12 @@
     <button @click="loadImage">Click To Load Image</button>
 
     <view class="msg">{{ msg }}</view>
-    <img-loader ref="imgLoader"></img-loader>
+    <img-load ref="imgLoad"></img-load>
   </div>
 </template>
 
 <script>
-  import imgLoader from '@/components/imgLoader'
+  import imgLoad from '@/components/imgLoad'
 
   // 缩略图 80x50 3KB
   const imgUrlThumbnail = 'http://storage.360buyimg.com/mtd/home/lion1483683731203.jpg'
@@ -27,7 +27,7 @@
       }
     },
     components: {
-      imgLoader
+      imgLoad
     },
     methods: {
       loadImage () {
@@ -36,7 +36,7 @@
         this.imgUrl = imgUrlThumbnail
         // 同时对原图进行预加载，加载成功后再替换
         setTimeout(() => {
-          this.$refs.imgLoader.load(imgUrlOriginal, (err, data) => {
+          this.$refs.imgLoad.load(imgUrlOriginal, (err, data) => {
             console.log('图片加载完成', err, data.src)
             this.msg = '大图加载完成~'
             if (!err) {

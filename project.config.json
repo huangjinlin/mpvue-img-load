@@ -10,7 +10,7 @@
 	"miniprogramRoot": "./dist/",
 	"compileType": "miniprogram",
 	"appid": "touristappid",
-	"projectname": "mpvue-img-loader",
+	"projectname": "mpvue-img-load",
 	"condition": {
 		"search": {
 			"current": -1,

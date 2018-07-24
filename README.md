@@ -1,4 +1,4 @@
-# mpvue-img-loader
+# mpvue-img-load
 
 小程序图片预加载组件,基于 [mpvue](https://github.com/Meituan-Dianping/mpvue) 框架的重写[wxapp-img-loader](https://github.com/o2team/wxapp-img-loader),更好的满足工程化,模块化,自动化的需求
 
@@ -6,7 +6,7 @@
 1.安装依赖
 
 ``` bash
-npm install mpvue-img-loader
+npm install mpvue-img-load
 ```
 
 2.调用组件
@@ -14,12 +14,12 @@ npm install mpvue-img-loader
 ``` html
 <div>
   <image v-if="imgUrl" :src="imgUrl" />
-  <img-loader ref="imgLoader"></img-loader>
+  <img-load ref="imgLoad"></img-load>
 </div>
 ```
 
 ``` javascript
-  import imgLoader from 'mpvue-img-loader'
+  import imgLoad from 'mpvue-img-load'
 
   export default {
     data () {
@@ -28,7 +28,7 @@ npm install mpvue-img-loader
       }
     },
     components: {
-      imgLoader
+      imgLoad
     },
     methods: {
       loadImage () {
@@ -37,7 +37,7 @@ npm install mpvue-img-loader
         // 原图 3200x2000 1.6MB
         const imgUrlOriginal = 'http://storage.360buyimg.com/mtd/home/lion1483624894660.jpg'
         // 同时对原图进行预加载，加载成功后再替换
-        this.$refs.imgLoader.load(imgUrlOriginal, (err, data) => {
+        this.$refs.imgLoad.load(imgUrlOriginal, (err, data) => {
           if (!err) {
             this.imgUrl = data.src
           }

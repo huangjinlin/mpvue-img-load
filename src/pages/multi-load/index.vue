@@ -6,12 +6,12 @@
       </div>
     </div>
     <button @click="loadImages">Click To Load Images</button>
-    <img-loader ref="imgLoader"></img-loader>
+    <img-load ref="imgLoad"></img-load>
   </div>
 </template>
 
 <script>
-  import imgLoader from '@/components/imgLoader'
+  import imgLoad from '@/components/imgLoad'
 
   // 生成一些测试数据
   function genImgListData () {
@@ -45,13 +45,13 @@
       }
     },
     components: {
-      imgLoader
+      imgLoad
     },
     methods: {
       loadImages () {
         // 同时发起全部图片的加载
         this.imgList.forEach(item => {
-          this.$refs.imgLoader.load(item.url, this.imageOnLoad)
+          this.$refs.imgLoad.load(item.url, this.imageOnLoad)
         })
       },
       // 加载完成后的回调

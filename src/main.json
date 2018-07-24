@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/single-load/main",
+    "pages/multi-load/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "图片预加载测试页面",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#333",
+    "backgroundColor": "#ececec",
+    "list": [{
+      "pagePath": "pages/single-load/main",
+      "text": "单张",
+      "iconPath": "static/images/icon-square.png",
+      "selectedIconPath": "static/images/icon-square.png"
+    }, {
+      "pagePath": "pages/multi-load/main",
+      "text": "多张",
+      "iconPath": "static/images/icon-grid.png",
+      "selectedIconPath": "static/images/icon-grid.png"
+    }]
+  }
+}

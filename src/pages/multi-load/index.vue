@@ -50,7 +50,7 @@
     methods: {
       loadImages () {
         // 同时发起全部图片的加载
-        this.imgList.forEach(item => {
+        this.imgList.forEach((item, index) => {
           this.$refs.imgLoad.load(item.url, this.imageOnLoad)
         })
       },

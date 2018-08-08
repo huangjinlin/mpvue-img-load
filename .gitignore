@@ -2,6 +2,7 @@
 node_modules/
 dist/
 now.vue
+README.html
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

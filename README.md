@@ -9,7 +9,7 @@
 npm install mpvue-img-load
 ```
 
-2.调用组件
+2.调用组件-单张图片
 
 ``` html
 <div>
@@ -45,6 +45,41 @@ npm install mpvue-img-load
       }
     }
   }
+```
+3.调用组件-多张图片
+
+``` html
+<div v-for="(item,index) in imgList" :key="index" class="img_wrap">
+  <image v-if="item.loaded" :src="item.url" class="fade_in"/>
+</div>
+<img-load ref="imgLoad"></img-load>
+```
+
+``` javascript
+import imgLoad from 'mpvue-img-load'
+
+export default {
+  data () {
+    return {
+      imgList: [
+        {url:'http://img10.360buyimg.com/img/s600x600_jfs/t3586/215/2086933702/144606/c5885c8b/583e2f08N13aa7762.png',loaded:false},
+        {url:'http://img10.360buyimg.com/img/s600x600_jfs/t3643/111/394078676/159202/a59f6b72/5809b3ccN41e5e01f.jpg',loaded:false},
+      ]
+    }
+  },
+  components: {
+    imgLoad
+  },
+  methods: {
+    loadImage () {
+      this.imgList.forEach((item, index, list) => {
+        this.$refs.imgLoad.load(item.url,(err, data) => {
+          item.loaded = true
+        })
+      })
+    }
+  }
+}
 ```
 
 注:
